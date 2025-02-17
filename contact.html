@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="brand-logo">
+          <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+        </a>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown-container">
+            <label for="dropdown-toggle" class="products-link">Products</label>
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Dropdown pentru subcategorii -->
+            <div class="dropdown">
+              <a href="Produse de Corp.html">Produse de Corp</a>
+              <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+              <a href="spray  de Corp .html">spray  de Corp </a>
+              <a href="produse pentru păr.html">produse pentru păr</a>
+            </div>
+          </li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </header>
+
+   <!-- Contact Section-->
+<section class="contact" id="contact">
+    <h2 class="title"><span>C</span>ontact <span>U</span>s</h2>
+    
+    <div class="contact-container">
+        <div class="contact-card">
+            <h3>Informații Companie</h3>
+            <div class="contact-info">
+                <span>DENUMIREA:</span> <span>FE ,,VIVID CHARM” SRL</span>
+                <span>COD FISCAL:</span> <span>242510012024030</span>
+                <span>COD TVA:</span> <span>2425030</span>
+                <span>SEDIUL:</span> <span>RM, OR.CHIȘINĂU, STR. SARMISEGETUSA 48</span>
+                <span>IBAN:</span> <span>MD01CF000024252224000030</span>
+                <span>BANCA:</span> <span>CEFM</span>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h3>Date de Contact</h3>
+            <div class="contact-info">
+                <span><i class='bx bx-phone'></i></span> <span>067-497-494 / +373 (69) 780534</span>
+                <span><i class='bx bx-envelope'></i></span> <span>fevividcharm@gmail.com</span>
+                <span><i class='bx bxl-instagram'></i></span> <span>Vivid_charm_srl</span>
+                <span><i class='bx bx-map'></i></span> <span>mun.Chișinău, str. Sarmizegetusa 48, cab. 13</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.4973389285673!2d28.846265476903486!3d47.01045212672312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d7b64f2a1f1%3A0x8c8b7f0a18f3b6b2!2sStrada%20Sarmizegetusa%2048%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e0!3m2!1sen!2s!4v1700000000000" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+<!-- End Footer Section-->
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

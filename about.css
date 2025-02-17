@@ -1,0 +1,14 @@
+.about {
+    background-image: linear-gradient(60deg, #6bc3dd 0%, #ade6f0 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  

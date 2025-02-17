@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="brand-logo">
+          <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+        </a>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown-container">
+            <label for="dropdown-toggle" class="products-link">Products</label>
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Dropdown pentru subcategorii -->
+            <div class="dropdown">
+              <a href="Produse de Corp.html">Produse de Corp</a>
+              <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+              <a href="spray  de Corp .html">spray  de Corp </a>
+              <a href="produse pentru păr.html">produse pentru păr</a>
+            </div>
+          </li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </header>
+
+    <!-- Hero Section-->
+    <section class="hero" id="hero">
+        <div class="content">
+            
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <h2>About Us</h2>
+        </div>
+        
+        <div class="about-cards-container">
+            <div class="info-card">
+                <h3>Ingrediente Sigure</h3>
+                <p><b>Produsele noastre sunt fără parabeni, sulfați sau parfumuri sintetice, reducând riscul de iritații.</b></p>
+            </div>
+            <div class="info-card">
+                <h3>Hidratare și Protecție</h3>
+                <p><b>Ingrediente precum aloe vera și uleiul de măsline hidratează profund și protejează pielea.</b></p>
+            </div>
+            <div class="info-card">
+                <h3>Responsabilitate Ecologică</h3>
+                <p><b>Folosim ambalaje ecologice și susținem practici sustenabile pentru protejarea mediului.</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="showcase-products">
+        <h2>Featured Products</h2>
+        <div class="items-container">
+            <div class="item-box">
+                <img src="img1.jpg" alt="Product 1">
+                <h3>Ulei</h3>
+            </div>
+            <div class="item-box">
+                <img src="img2.jpg" alt="Product 2">
+                <h3>Ser pentru piele</h3>
+            </div>
+            <div class="item-box">
+                <img src="12.webp" alt="Product 3">
+                <h3>Cleanser</h3>
+            </div>
+            <div class="item-box">
+                <img src="13.webp" alt="Product 4">
+                <h3>Mattyfying Cream</h3>
+            </div>
+            <div class="item-box">
+                <img src="14.webp" alt="Product 5">
+                <h3>Shampon</h3>
+            </div>
+        </div>
+    </section>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

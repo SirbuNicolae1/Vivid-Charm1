@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="brand-logo">
+          <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+        </a>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown-container">
+            <label for="dropdown-toggle" class="products-link">Products</label>
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Dropdown pentru subcategorii -->
+            <div class="dropdown">
+              <a href="Produse de Corp.html">Produse de Corp</a>
+              <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+              <a href="spray  de Corp .html">spray  de Corp </a>
+              <a href="produse pentru păr.html">produse pentru păr</a>
+            </div>
+          </li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </header>
+
+     <!-- About Section -->
+     <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="title1"><span>A</span>bout <span>U</span>s</h2>
+                
+                <p> FE ,,Vivid Charm" SRL este o companie ce oferă o gamă largă de produse de îngrijire a feței, corpului și a părului. <br>
+                   <br> Data înființării este 01.10.2024, în cadrul Centrului de Excelență în Informatică și Tehnologii Informaționale, af.113. În cadrul firmei activează 13 angajați încadrați în 4 departamente. <br>
+                   <br> Produsele noastre au o compoziție organică, naturală deoarece sunt fabricate dermatologic pe baza de uleiuri naturale, ce nu provoacă alergii sau iritații. 
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgbx">
+                    <img src="logo-removebg-preview.PNG">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- End About Section -->
+</section>
+<!-- End Footer Section-->
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

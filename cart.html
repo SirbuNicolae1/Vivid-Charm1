@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" class="brand-logo">
+        <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+      </a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-container">
+          <label for="dropdown-toggle" class="products-link">Products</label>
+          <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+          <!-- Dropdown pentru subcategorii -->
+          <div class="dropdown">
+            <a href="Produse de Corp.html">Produse de Corp</a>
+            <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+            <a href="spray  de Corp .html">spray  de Corp </a>
+            <a href="produse pentru păr.html">produse pentru păr</a>
+          </div>
+        </li>
+        <li><a href="experts.html">Experts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </header>
+    <section class="cart-section">
+      <div class="cart-container">
+        <h2>Coșul de Cumpărături</h2>
+        <div class="cart-items">
+          <!-- Cart Item 1 -->
+          <div class="cart-item">
+            <img src="i1.png" alt="Product 1">
+            <div class="item-details">
+              <h3>Gel de duș cremos</h3>
+              <p>Price: 120 Lei</p>
+              <div class="item-quantity">
+                <label for="quantity1">Cantitate: </label>
+                <input type="number" id="quantity1" name="quantity" min="1" value="1">
+              </div>
+              <button class="remove-item">Șterge</button>
+            </div>
+          </div>
+  
+          <!-- Cart Item 2 -->
+          <div class="cart-item">
+            <img src="i2-removebg-preview.png" alt="Product 2">
+            <div class="item-details">
+              <h3>Serum</h3>
+              <p>Price: 298 Lei</p>
+              <div class="item-quantity">
+                <label for="quantity2">Cantitate: </label>
+                <input type="number" id="quantity2" name="quantity" min="1" value="1">
+              </div>
+              <button class="remove-item">Șterge</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="cart-summary">
+          <h3>Total</h3>
+          <p>Total Produse: 2</p>
+          <p>Total Preț: 418 Lei</p>
+          <div class="cart-buttons">
+            <a href="products.html" class="continue-shopping">Continuă Cumpărăturile</a>
+            <a href="checkout.html" class="checkout">Cumpără</a>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    </body>
+    </html>

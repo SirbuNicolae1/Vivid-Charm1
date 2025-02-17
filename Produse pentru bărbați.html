@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" class="brand-logo">
+        <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+      </a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-container">
+          <label for="dropdown-toggle" class="products-link">Products</label>
+          <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+          <!-- Dropdown pentru subcategorii -->
+          <div class="dropdown">
+            <a href="Produse de Corp.html">Produse de Corp</a>
+            <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+            <a href="spray  de Corp .html">spray  de Corp </a>
+            <a href="produse pentru păr.html">produse pentru păr</a>
+          </div>
+        </li>
+        <li><a href="experts.html">Experts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </header>
+
+    <!-- Product section-->
+    <section class="product" id="product">
+        <h2 class="title"><span>P</span>roduse pentru bărbați</h2>
+        <h3 class="sub-title"></h3>
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="i11.png"><br><br>
+            <h3>Ulei pentru barbă</h3><br>
+        <span>Prețul: 145 Lei </span>
+        <br>
+        <span>Cod: 042</span>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="i12.png"><br><br>
+            <h3>SAftershave balsam</h3><br>
+            <span>Prețul: 240 Lei </span>
+        <br>
+        <span>Cod: 043</span>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="Screenshot_2025-02-14_141007-removebg-preview.png"><br><br>
+            <h3>Cremă hidratantă</h3><br>
+        <span>Prețul: 220 Lei </span>
+        <br>
+        <span>Cod: 045</span>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="Adobe Express - file.png"><br><br>
+            <h3>Spumă de ras</h3><br>
+        <span>Prețul: 200 Lei </span>
+        <br>
+        <span>Cod: 044</span>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="erasebg-transformed.png"><br><br>
+            <h3>Gel de curățare</h3><br>
+            <span>Prețul: 305 Lei </span>
+        <br>
+        <span>Cod: 041</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="bx bx-heart"></a>
+          <a href="#" class="bx bx-shopping-bag"></a>
+          
+          <img src="r2.png"><br><br>
+          <h3>Spray protector termic </h3><br>
+          <span>Prețul: 180 Lei </span>
+      <br>
+      <span>Cod: 611</span>
+      </div>
+        
+        
+        
+    </div>
+
+    
+</section>
+<br><br>
+<!-- End Product section-->
+</section>
+<!-- End Footer Section-->
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

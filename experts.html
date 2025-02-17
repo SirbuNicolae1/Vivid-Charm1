@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="brand-logo">
+          <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+        </a>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown-container">
+            <label for="dropdown-toggle" class="products-link">Products</label>
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Dropdown pentru subcategorii -->
+            <div class="dropdown">
+              <a href="Produse de Corp.html">Produse de Corp</a>
+              <a href="Produse pentru bărbați.html">Produse pentru bărbați</a>
+              <a href="spray  de Corp .html">spray  de Corp </a>
+              <a href="produse pentru păr.html">produse pentru păr</a>
+            </div>
+          </li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </header>
+
+    <!-- Expert Section -->
+    <div class="org-structure">
+        <!-- Primul nivel -->
+        <div class="org-level">
+          <div class="org-box">
+            <img src="2.jpg" alt="Director">
+            <div class="org-name">Leșco Andreia</div>
+            <div class="org-position">Director</div>
+          </div>
+          <div class="org-box">
+            <img src="6.jpg" alt="Office Manager">
+            <div class="org-name">Grigor Gabriela</div>
+            <div class="org-position">Office Manager</div>
+          </div>
+        </div>
+        
+        <!-- Al doilea nivel -->
+        <div class="org-level">
+          <div class="org-box">
+            <img src="1.jpg" alt="Marketing">
+            <div class="org-name">Stepan Mădălina</div>
+            <div class="org-position">Șef Marketing</div>
+          </div>
+          <div class="org-box">
+            <img src="10.jpg" alt="HR">
+            <div class="org-name">Moroz Diana</div>
+            <div class="org-position">Șef Resurse Umane</div>
+          </div>
+          <div class="org-box">
+            <img src="7.jpg" alt="Accounting">
+            <div class="org-name">Popovici Mihaela</div>
+            <div class="org-position">Șef Contabilă</div>
+          </div>
+          <div class="org-box">
+            <img src="12.jpg" alt="Sales">
+            <div class="org-name">Russu Laurențiu</div>
+            <div class="org-position">Șef Vânzări</div>
+          </div>
+        </div>
+        
+        <!-- Al treilea nivel -->
+        <div class="org-level">
+          <div class="org-box">
+            <img src="4.jpg" alt="Specialist Marketing">
+            <div class="org-name">Nafranița Constantin </div>
+            <div class="org-position">Specialist Marketing</div>
+          </div>
+          <div class="org-box">
+            <img src="11.jpg" alt="Specialist Marketing">
+            <div class="org-name">Stamate Augustin</div>
+            <div class="org-position">Specialist Marketing</div>
+          </div>
+          <div class="org-box">
+            <img src="5.jpg" alt="Specialist HR">
+            <div class="org-name">Pașcan Victoria</div>
+            <div class="org-position">Specialist Resurse Umane</div>
+          </div>
+          <div class="org-box">
+            <img src="9.jpg" alt="Specialist Contabilitate">
+            <div class="org-name">Stratulat Gabriela</div>
+            <div class="org-position">Specialist Contabilă</div>
+          </div>
+          <div class="org-box">
+            <img src="3.jpg" alt="Specialist Vânzări">
+            <div class="org-name">Stog Adrian</div>
+            <div class="org-position">Specialist Vânzări</div>
+          </div>
+          <div class="org-box">
+            <img src="8.jpg" alt="Șef Achiziții">
+            <div class="org-name">Popescu Adela</div>
+            <div class="org-position">Șef Achiziții</div>
+          </div>
+        </div>
+      </div>
+<!-- End Footer Section-->
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

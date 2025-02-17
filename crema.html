@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Cosmetics - Ecommerce Website</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="brand-logo">
+          <img src="logo-removebg-preview.PNG" alt="Cosmetics Logo" class="brand-logo-img">
+        </a>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown-container">
+            <label for="dropdown-toggle" class="products-link">Products</label>
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Dropdown pentru subcategorii -->
+            <div class="dropdown">
+              <a href="Produse de Corp.html">Produse de Corp</a>
+              <a href="eyeliners.html">Eyeliners</a>
+              <a href="foundations.html">Foundations</a>
+            </div>
+          </li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </header>
+
+    <!-- Product section-->
+    <section class="product" id="product">
+        <h2 class="title"><span>U</span>lei</h2>
+        <h3 class="sub-title"></h3>
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/packof5lipstick.jpg"><br><br>
+            <h3>Set of 5 Lipsticks</h3><br>
+        <span>Rs.2600</span>
+        <a href="#" class="btn1">Add to cart</a>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/brownlipstick.jpg"><br><br>
+            <h3>Brown Lipstick</h3><br>
+            <span>Rs.400</span>
+            <a href="#" class="btn1">Add to cart</a>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/2liquidshades.jpg"><br><br>
+            <h3>Set of 2 Liquid Lipstick shades</h3><br>
+            <span>Rs.600</span>
+            <a href="#" class="btn1">Add to cart</a>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/2shades.jpg"><br><br>
+            <h3>Buy 1 Get 1 Free</h3><br>
+            <span>Rs.300</span>
+            <a href="#" class="btn1">Add to cart</a>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/pinklipstick.jpg"><br><br>
+            <h3>Pink Lipstick</h3><br>
+            <span>Rs.300</span>
+            <a href="#" class="btn1">Add to cart</a>
+        </div>
+        <div class="box">
+            <a href="#" class="bx bx-heart"></a>
+            <a href="#" class="bx bx-shopping-bag"></a>
+            
+            <img src="images/redlipstick.jpg"><br><br>
+            <h3>Red Lipstick</h3><br>
+            <span>Rs.800</span>
+            <a href="#" class="btn1">Add to cart</a>
+        </div>
+    </div>
+
+    
+</section>
+<br><br>
+<!-- End Product section-->
+</section>
+<!-- End Footer Section-->
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
